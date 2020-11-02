@@ -1733,7 +1733,6 @@ namespace Chaincase.Droid
 			global::Microsoft.MobileBlazorBindings.WebView.Android.Resource.Style.CardView = global::Chaincase.Droid.Resource.Style.CardView;
 			global::Microsoft.MobileBlazorBindings.WebView.Android.Resource.Style.CardView_Dark = global::Chaincase.Droid.Resource.Style.CardView_Dark;
 			global::Microsoft.MobileBlazorBindings.WebView.Android.Resource.Style.CardView_Light = global::Chaincase.Droid.Resource.Style.CardView_Light;
-			global::Microsoft.MobileBlazorBindings.WebView.Android.Resource.Style.collectionViewScrollBars = global::Chaincase.Droid.Resource.Style.collectionViewScrollBars;
 			global::Microsoft.MobileBlazorBindings.WebView.Android.Resource.Style.collectionViewTheme = global::Chaincase.Droid.Resource.Style.collectionViewTheme;
 			global::Microsoft.MobileBlazorBindings.WebView.Android.Resource.Style.MainTheme = global::Chaincase.Droid.Resource.Style.MainTheme;
 			global::Microsoft.MobileBlazorBindings.WebView.Android.Resource.Style.MainTheme_Base = global::Chaincase.Droid.Resource.Style.MainTheme_Base;

@@ -127,6 +127,8 @@
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\logo_vertical.imageset\logo_vertical.png" />
     <ImageAsset Include="Assets.xcassets\logo_vertical.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\checkcircle.imageset\checkcircle.png" />
+    <ImageAsset Include="Assets.xcassets\checkcircle.imageset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -137,9 +139,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.MobileBlazorBindings.WebView.iOS" Version="0.4.74-preview" />
+    <PackageReference Include="Microsoft.MobileBlazorBindings.WebView.iOS" Version="0.5.50-preview" />
     <PackageReference Include="System.Memory" Version="4.5.4" IncludeAssets="None" />
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="ZXing.Net.Mobile.Forms">
       <Version>2.4.1</Version>
@@ -169,5 +171,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Backgrounding\" />
+    <Folder Include="Resources\wwwroot\" />
+    <Folder Include="Assets.xcassets\checkcircle.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\wwwroot\index.html" />
   </ItemGroup>
 </Project>

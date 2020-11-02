@@ -5,7 +5,6 @@
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
     <RazorLangVersion>3.0</RazorLangVersion>
     <EnableDefaultCssItems>false</EnableDefaultCssItems>
-    <WwwRootResourcePath>WebUI\wwwroot</WwwRootResourcePath>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
   </PropertyGroup>
 
@@ -15,14 +14,28 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="$(WwwRootResourcePath)\**" />
     <EmbeddedResource Include="style.css" />
+    <EmbeddedResource Include="wwwroot\css\app.css" />
+    <EmbeddedResource Include="wwwroot\css\bootstrap\bootstrap.min.css" />
+    <EmbeddedResource Include="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+    <EmbeddedResource Include="wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css" />
+    <EmbeddedResource Include="wwwroot\css\open-iconic\font\fonts\open-iconic.eot" />
+    <EmbeddedResource Include="wwwroot\css\open-iconic\font\fonts\open-iconic.otf" />
+    <EmbeddedResource Include="wwwroot\css\open-iconic\font\fonts\open-iconic.svg" />
+    <EmbeddedResource Include="wwwroot\css\open-iconic\font\fonts\open-iconic.ttf" />
+    <EmbeddedResource Include="wwwroot\css\open-iconic\font\fonts\open-iconic.woff" />
+    <EmbeddedResource Include="wwwroot\css\open-iconic\FONT-LICENSE" />
+    <EmbeddedResource Include="wwwroot\css\open-iconic\ICON-LICENSE" />
+    <EmbeddedResource Include="wwwroot\css\open-iconic\README.md" />
+    <EmbeddedResource Include="wwwroot\favicon.ico" />
+    <EmbeddedResource Include="wwwroot\index.html" />
+    <EmbeddedResource Include="wwwroot\weather.json" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="LiveSharp" Version="1.6.12" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="3.1.5" />
-    <PackageReference Include="Microsoft.MobileBlazorBindings" Version="0.4.74-preview" />
+    <PackageReference Include="Microsoft.MobileBlazorBindings" Version="0.5.50-preview" />
     <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1534" />
@@ -47,6 +60,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Converters\" />
     <Folder Include="Views\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="FormsUI\Views\CoinSelectModal.xaml.cs" />
@@ -58,5 +72,22 @@
     <EmbeddedResource Remove="FormsUI\Views\Templates\CoinViewTemplate.xaml" />
     <EmbeddedResource Remove="FormsUI\Views\TransactionDetailPage.xaml" />
     <EmbeddedResource Remove="FormsUI\Views\VerifyMnemonicPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\css\app.css" />
+    <Content Remove="wwwroot\css\bootstrap\bootstrap.min.css" />
+    <Content Remove="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+    <Content Remove="wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css" />
+    <Content Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.eot" />
+    <Content Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.otf" />
+    <Content Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.svg" />
+    <Content Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.ttf" />
+    <Content Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.woff" />
+    <Content Remove="wwwroot\css\open-iconic\FONT-LICENSE" />
+    <Content Remove="wwwroot\css\open-iconic\ICON-LICENSE" />
+    <Content Remove="wwwroot\css\open-iconic\README.md" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\weather.json" />
   </ItemGroup>
 </Project>

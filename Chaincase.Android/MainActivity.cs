@@ -22,7 +22,7 @@ namespace Chaincase.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             ZXing.Net.Mobile.Forms.Android.Platform.Init();
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App(ConfigureDi));
+            LoadApplication(new App(ConfigureDi, new AssetFileProvider(Assets, "wwwroot"));
         }
 
         private void ConfigureDi(IServiceCollection obj)
